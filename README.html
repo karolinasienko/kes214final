@@ -89,13 +89,13 @@ window.Quarto = {
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>This repository contains all of the data and code used to analyze the effects of Hurricane Hugo’s disturbance on stream water concentrations of potassium (K), nitrate (NO<span class="math inline">\(_3\)</span>), magnesium (Mg), calcium, (Ca) and ammonium (NH<span class="math inline">\(_4\)</span>), in the Puente Roto Mameyes (PRM) and Bisley Quebradas 1, 2 and 3 (BQ1, BQ2, BQ3) watersheds of the Luquillo Experimental Forest, Puerto Rico. The purpose is to reproduce Figure 3 (see below) from a paper done by Schaefer, Douglas. A. et al.&nbsp;titled <em>Effects of hurricane disturbance on stream water concentrations and fluxes in eight tropical forest watersheds of the Luquillo Experimental Forest, Puerto Rico</em> <a href="https://doi.org/10.1017/s0266467400001358">(2000)</a>.</p>
-<p><img src="eds214_paper_graph.png" class="img-fluid"></p>
+<p><img src="../docs/eds214_paper_graph.png" class="img-fluid"></p>
 </section>
 <section id="repository-contents" class="level2">
 <h2 class="anchored" data-anchor-id="repository-contents">Repository Contents</h2>
 <p>This repository contains multiple folders and files necessary for completing the analysis.</p>
 <p>The <code>docs</code> folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.</p>
-<p>The <code>output</code> folder contains one .csv file, <code>fig3_long.csv</code>, that contains the 9-week moving average concentrations for each nutrient in each watershed.</p>
+<p>The <code>output</code> folder contains one .csv file, <code>clean_fig3_long.csv</code>, that contains the 9-week moving average concentrations for each nutrient in each watershed.</p>
 <p>The <code>paper</code> folder contains a Quarto markdown file that contains all of the analysis and resulting figure.</p>
 <p>The <code>R</code> folder contains <code>moving-average.R</code> which is a file that defines the <code>moving_average()</code> function.</p>
 <p>The <code>raw_data</code> folder contains all the raw data downloaded from EDI Data Portal. There is a .csv file for each of the three BQ watersheds and for the PRM watershed.</p>
@@ -104,14 +104,14 @@ window.Quarto = {
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>The relevant data for this analysis was downloaded from <a href="https://doi.org/10.6073/PASTA/F31349BEBDC304F758718F4798D25458">EDI Data Portal</a>.</p>
-<p>The following files were downloaded and can be found in the <code>raw_data</code> folder:</p>
+<p>The following data files for this analysis were downloaded from <a href="https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-luq.20.4923064">EDI Data Portal</a> and can be found in the folder <code>raw_data</code>:</p>
 <ul>
 <li>QuebradaCuenca1-Bisley.csv</li>
 <li>QuebradaCuenca2-Bisley.csv</li>
 <li>QuebradaCuenca3-Bisley.csv</li>
 <li>RioMameyesPuenteRoto.csv</li>
 </ul>
+<p>Each .csv file was read in and filtered to the date range from October 18th, 1988 to December 31st, 1994. The relevant columns corresponding to Sample ID, Sample Date, and concentrations for K, NO<span class="math inline">\(_3\)</span>, Mg, Ca, and NH<span class="math inline">\(_4\)</span> were also selected.</p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>

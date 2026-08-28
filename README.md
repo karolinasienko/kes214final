@@ -7,7 +7,7 @@ Contributors: [Max Czapanskiy](https://github.com/FlukeAndFeather) & [Ale Vida M
 ## Background
 This repository contains all of the data and code used to analyze the effects of Hurricane Hugo's disturbance on stream water concentrations of potassium (K), nitrate (NO$_3$), magnesium (Mg), calcium, (Ca) and ammonium (NH$_4$), in the Puente Roto Mameyes (PRM) and Bisley Quebradas 1, 2 and 3 (BQ1, BQ2, BQ3) watersheds of the Luquillo Experimental Forest, Puerto Rico. The purpose is to reproduce Figure 3 (see below) from a paper done by Schaefer, Douglas. A. et al. titled *Effects of hurricane disturbance on stream water concentrations and fluxes in eight tropical forest watersheds of the Luquillo Experimental Forest, Puerto Rico* [(2000)](https://doi.org/10.1017/s0266467400001358).
 
-![](eds214_paper_graph)
+![](../docs/eds214_paper_graph)
 
 
 ## Repository Contents
@@ -16,7 +16,7 @@ This repository contains multiple folders and files necessary for completing the
 
 The `docs` folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.
 
-The `output` folder contains one .csv file, `fig3_long.csv`, that contains the 9-week moving average concentrations for each nutrient in each watershed.
+The `output` folder contains one .csv file, `clean_fig3_long.csv`, that contains the 9-week moving average concentrations for each nutrient in each watershed.
 
 The `paper` folder contains a Quarto markdown file that contains all of the analysis and resulting figure.
 
