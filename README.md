@@ -26,7 +26,7 @@ The [`raw_data`](raw_data/) folder contains all the raw data downloaded from EDI
 
 The [`scratch`](scratch/) folder contains [`spaghetti.R`](scratch/spaghetti.R) which has code from early analysis.
 
-The [`1_clean_data.R`](1_clean_data.R) file contains the code for the clean data found in the `output` folder.
+The [`1_clean_data.R`](1_clean_data.R) file contains the code for the clean data found in the [`output`](output/) folder.
 
 
 
