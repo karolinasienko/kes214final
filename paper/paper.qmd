@@ -1,6 +1,9 @@
 ---
 title: Reproducing a Time Series of Hurricane Hugo's Effect on Stream Water Concentrations
-format: html
+format: 
+  html:
+  toc: true
+  toc-depth: 5
 execute: 
   echo: false
   warning: false
