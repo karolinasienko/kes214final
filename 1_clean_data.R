@@ -44,6 +44,7 @@ combined_table_long <- combined_table |>
     names_to = "Nutrient",
     values_to = "Concentration"
   ) |> 
+# Changing the sample IDs
   mutate(Sample_ID = factor(
     Sample_ID,
     levels = c("MPR", "Q1", "Q2", "Q3"),
