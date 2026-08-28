@@ -16,15 +16,15 @@ This repository contains multiple folders and files necessary for completing the
 
 The [`docs`](docs/) folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.
 
-The [`output`](output/) folder contains one .csv file, [`clean_fig3_long.csv`](clean_fig3_long.csv`), that contains the 9-week moving average concentrations for each nutrient in each watershed.
+The [`output`](output/) folder contains one .csv file, [`clean_fig3_long.csv`](output/clean_fig3_long.csv`), that contains the 9-week moving average concentrations for each nutrient in each watershed.
 
 The [`paper`](paper/) folder contains a Quarto markdown file that contains all of the analysis and resulting figure.
 
-The [`R`](R/) folder contains [`moving-average.R`](moving-average.R) which is a file that defines the `moving_average()` function.
+The [`R`](R/) folder contains [`moving-average.R`](R/moving-average.R) which is a file that defines the `moving_average()` function.
 
 The [`raw_data`](raw_data/) folder contains all the raw data downloaded from EDI Data Portal. There is a .csv file for each of the three BQ watersheds and for the PRM watershed.
 
-The [`scratch`](scratch/) folder contains [`spaghetti.R`](spaghetti.R) which has code from early analysis.
+The [`scratch`](scratch/) folder contains [`spaghetti.R`](scratch/spaghetti.R) which has code from early analysis.
 
 The [`1_clean_data.R`](1_clean_data.R) file contains the code for the clean data found in the `output` folder.
 
