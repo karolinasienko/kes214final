@@ -2,7 +2,7 @@
 
 Author: [Karolina Sienko](https://github.com/karolinasienko)
 
-Contributors: [Max Czapanskiy](https://github.com/FlukeAndFeather) & [Ale Vida Meza](https://github.com/avidalmeza)
+Contributors: [Max Czapanskiy](https://github.com/FlukeAndFeather) & [Alessandra Vidal Meza](https://github.com/avidalmeza)
 
 ## Background
 This repository contains all of the data and code used to analyze the effects of Hurricane Hugo's disturbance on stream water concentrations of potassium (K), nitrate (NO$_3$), magnesium (Mg), calcium, (Ca) and ammonium (NH$_4$), in the Puente Roto Mameyes (PRM) and Bisley Quebradas 1, 2 and 3 (BQ1, BQ2, BQ3) watersheds of the Luquillo Experimental Forest, Puerto Rico. The purpose is to reproduce Figure 3 (see below) from a paper done by Schaefer, Douglas. A. et al. titled *Effects of hurricane disturbance on stream water concentrations and fluxes in eight tropical forest watersheds of the Luquillo Experimental Forest, Puerto Rico* [(2000)](https://doi.org/10.1017/s0266467400001358).
@@ -14,19 +14,19 @@ This repository contains all of the data and code used to analyze the effects of
 
 This repository contains multiple folders and files necessary for completing the analysis.
 
-The `docs` folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.
+The `[docs](docs/)` folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.
 
-The `output` folder contains one .csv file, `clean_fig3_long.csv`, that contains the 9-week moving average concentrations for each nutrient in each watershed.
+The `[output](output/)` folder contains one .csv file, `clean_fig3_long.csv`, that contains the 9-week moving average concentrations for each nutrient in each watershed.
 
-The `paper` folder contains a Quarto markdown file that contains all of the analysis and resulting figure.
+The `[paper](paper/)` folder contains a Quarto markdown file that contains all of the analysis and resulting figure.
 
-The `R` folder contains `moving-average.R` which is a file that defines the `moving_average()` function.
+The `[R](R/)` folder contains `moving-average.R` which is a file that defines the `moving_average()` function.
 
-The `raw_data` folder contains all the raw data downloaded from EDI Data Portal. There is a .csv file for each of the three BQ watersheds and for the PRM watershed.
+The `[raw_data](raw_data/)` folder contains all the raw data downloaded from EDI Data Portal. There is a .csv file for each of the three BQ watersheds and for the PRM watershed.
 
-The `scratch` folder contains `spaghetti.R` which has code from early analysis.
+The `[scratch](scratch/)` folder contains `spaghetti.R` which has code from early analysis.
 
-The `1_clean_data.R` file contains the code for the clean data found in the `output` folder.
+The `[1_clean_data.R](1_clean_data.R/)` file contains the code for the clean data found in the `output` folder.
 
 
 
