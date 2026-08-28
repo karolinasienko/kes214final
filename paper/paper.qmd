@@ -6,7 +6,7 @@ Author: [Karolina Sienko](https://github.com/karolinasienko)
 Contributors: [Max Czapanskiy](https://github.com/FlukeAndFeather) & [Ale Vida Meza](https://github.com/avidalmeza)
 
 ## Background
-This repository contains all of the data and code used to analyze the effects of Hurricane Hugo's disturbance on stream water concentrations of potassium (K), nitrate (NO$_3$), magnesium (Mg), calcium, (Ca) and ammonium (NH$_4$), in the Puente Roto Mameyes (PRM) and Bisley Quebradas 1, 2 and 3 (Q1, Q2, Q3) watersheds of the Luquillo Experimental Forest, Puerto Rico. The purpose is to reproduce Figure 3 (see below) from a paper done by Schaefer, Douglas. A. et al. titled *Effects of hurricane disturbance on stream water concentrations and fluxes in eight tropical forest watersheds of the Luquillo Experimental Forest, Puerto Rico* [(2000)](https://doi.org/10.1017/s0266467400001358).
+This repository contains all of the data and code used to analyze the effects of Hurricane Hugo's disturbance on stream water concentrations of potassium (K), nitrate (NO$_3$), magnesium (Mg), calcium, (Ca) and ammonium (NH$_4$), in the Puente Roto Mameyes (PRM) and Bisley Quebradas 1, 2 and 3 (BQ1, BQ2, BQ3) watersheds of the Luquillo Experimental Forest, Puerto Rico. The purpose is to reproduce Figure 3 (see below) from a paper done by Schaefer, Douglas. A. et al. titled *Effects of hurricane disturbance on stream water concentrations and fluxes in eight tropical forest watersheds of the Luquillo Experimental Forest, Puerto Rico* [(2000)](https://doi.org/10.1017/s0266467400001358).
 
 ![](eds214_paper_graph)
 
@@ -23,7 +23,8 @@ Each .csv file was read in and filtered to the date range from October 18th, 198
 
 
 ```{r}
-#| output: false
+#| warning: false
+
 library(tidyverse)
 library(lubridate)
 
@@ -38,8 +39,10 @@ The concentrations for each of the five nutrients in each of the four watersheds
 
 
 ## Results
+The below graph shows the concentrations of Ca, K, Mg, NH$_4$, and NO$_3$ in the BQ1, BQ2, BQ3, and PRM watersheds in Bisley, Puerto Rico. The vertical line indicates the time of Hurrican Hugo's disturbance on September 19th, 1989.
 
 ```{r}
+#| echo: false
 #| warning: false
 
 # Graphing each watershed's concentrations

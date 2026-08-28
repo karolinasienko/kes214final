@@ -43,7 +43,12 @@ combined_table_long <- combined_table |>
     cols = "k_mgl":"NH4_ugl",
     names_to = "Nutrient",
     values_to = "Concentration"
-  )
+  ) |> 
+  mutate(Sample_ID = factor(
+    Sample_ID,
+    levels = c("MPR", "Q1", "Q2", "Q3"),
+    labels = c("PRM", "BQ1", "BQ2", "BQ3")
+  ))
 
 
 write_csv(combined_table_long, "output/fig3_long.csv")
