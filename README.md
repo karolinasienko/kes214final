@@ -16,7 +16,7 @@ This repository contains multiple folders and files necessary for completing the
 
 The [`docs`](docs/) folder contains the .html file used to create a webpage in GitHub Pages, as well as .png files of the original graph I replicated and my resulting graph.
 
-The [`output`](output/) folder contains one .csv file, [`clean_fig3_long.csv`](output/clean_fig3_long.csv), that contains the 9-week moving average concentrations for each nutrient in each watershed.
+The [`output`](output/) folder contains one .csv file, [`fig3_long.csv`](output/fig3_long.csv), that contains the 9-week moving average concentrations for each nutrient in each watershed.
 
 The [`paper`](paper/) folder contains a Quarto markdown file that contains all of the analysis and resulting figure.
 
