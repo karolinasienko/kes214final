@@ -36,7 +36,7 @@ Each .csv file was read in and filtered to the date range from October 18th, 198
 
 library(tidyverse)
 
-fig3_long <- read_csv("../output/clean_fig3_long.csv")
+fig3_long <- read_csv("../output/fig3_long.csv")
 
 ```
 
